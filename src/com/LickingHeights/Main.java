@@ -11,8 +11,9 @@ public class Main {
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
-        Pattern1();
-        Pattern2();
+//        Pattern1();
+//        Pattern2();
+        Pattern3();
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -38,23 +39,33 @@ public class Main {
         return number;
     }
 
-    public static void Pattern1() {
-        for(int rows = 0; rows <6 ;rows++){
+//    public static void Pattern1() {
+//        for (int rows = 0; rows < 6; rows++) {
+//
+//            for (int columns = 0; columns < 6; columns++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//
+//    public static void Pattern2() {
+//        for (int rows = 1; rows < 7; rows++) {
+//
+//            for (int columns = 1; columns < 7; columns++) {
+//                System.out.print(rows);
+//            }
+//            System.out.println(rows);
+//        }
+//    }
 
-            for(int columns = 0; columns < 6; columns++){
-                System.out.print("*");
+    public static void Pattern3() {
+        for (int rows = 1; rows < 7; rows++) {
+
+            for (int columns = 1; columns < 7; columns++) {
+                System.out.print(columns);
             }
             System.out.println();
-        }
-    }
-
-    public static void Pattern2(){
-        for(int rows = 1; rows <7 ;rows++){
-
-            for(int columns = 1; columns < 7; columns++){
-                System.out.print(rows);
-            }
-            System.out.println(rows);
         }
     }
 }
