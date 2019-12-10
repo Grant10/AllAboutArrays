@@ -10,15 +10,15 @@ public class Main {
 
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
-        
-        System.out.println("The sum of the array is " + sum(array));
-
-
         Pattern1();
         Pattern2();
         Pattern3();
         Pattern4();
         Pattern5();
+
+
+        System.out.println("The sum of the array is " + sum(array));
+        System.out.println("the minimum of the array is "+ minimum(array));
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -102,4 +102,17 @@ public class Main {
         }
         return sum;
     }
+
+    public static int minimum(int[] array) {
+        int min = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (min < array[1]) {
+                array[1] = min;
+            }
+            min = array[1];
+        }
+        return min;
+    }
+
+
 }
