@@ -151,7 +151,7 @@ printArray(BubbleSort(array));
                 return array;
     }
     public static void SentenceGenerator(String[] Verb ,String[]Places, String[]Adjectives, String[]people, String[]Time,String[]Thing){
-        System.out.println("I was" + Random);
+        System.out.println("I was" + randomWord(verb));
     }
     public static String randomWord(String[] array){
         Random random = new Random();
