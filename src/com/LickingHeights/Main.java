@@ -10,6 +10,12 @@ public class Main {
 
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
+        String[] Adjectives = {"smart", "artistic", "long", "dumb"};
+        String[] Places = {"Colombus", "Egypt", "Cleavland", "France"};
+        String[] People = {"Donald Trump", "Obama","Stan Lee", "James Charles"};
+        String[] Times = {"1888", "1899", "1999", "2019"};
+        String[] Things = {"Pencil sharpener", "Flag", "Chair", "Book"};
+
 //        Pattern1();
 //        Pattern2();
 //        Pattern3();
