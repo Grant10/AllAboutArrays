@@ -1,5 +1,7 @@
 package com.LickingHeights;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class Main {
         String[] People = {"Donald Trump", "Obama","Stan Lee", "James Charles"};
         String[] Times = {"1888", "1899", "1999", "2019"};
         String[] Things = {"Pencil sharpener", "Flag", "Chair", "Book"};
-
+        String[] verbs = {"run", "jog", "walk","trot"};
 //        Pattern1();
 //        Pattern2();
 //        Pattern3();
@@ -147,5 +149,12 @@ printArray(BubbleSort(array));
 
                 }
                 return array;
+    }
+    public static void SentenceGenerator(String[] Verb ,String[]Places, String[]Adjectives, String[]people, String[]Time,String[]Thing){
+        System.out.println("I was" + Random);
+    }
+    public static String randomWord(String[] array){
+        Random random = new Random();
+        return array[random.nextInt(array.length)];
     }
 }
