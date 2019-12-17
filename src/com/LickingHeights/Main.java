@@ -9,7 +9,10 @@ public class Main {
         int size = 10;
         int lowestNumber = 1;
         int highestNumber = 100;
-
+        String[]firstName = {"Nathan","Grant","Isancor","Mitch"};
+        String[]middleName = {"Plants","Charles","Miller","David"};
+        String[]lastName = {"Caldwell","Stratton","Walters","Smith"};
+print80sRapperName(firstName,middleName,lastName);
 
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
         String[] Adjectives = {"smart", "artistic", "long", "dumb"};
@@ -23,8 +26,8 @@ public class Main {
 //        Pattern3();
 //        Pattern4();
 //        Pattern5();
-
-
+        SentenceGenerator(verbs,Places,Adjectives,People,Times,Things);
+        System.out.println("");
         System.out.println("The sum of the array is " + sum(array));
         System.out.println("the minimum of the array is "+ minimum(array));
         System.out.println("The maximum of the array is "+ maximum(array));
@@ -150,11 +153,15 @@ printArray(BubbleSort(array));
                 }
                 return array;
     }
-    public static void SentenceGenerator(String[] Verb ,String[]Places, String[]Adjectives, String[]people, String[]Time,String[]Thing){
-        System.out.println("I was" + randomWord(verb));
+    public static void SentenceGenerator(String[] verbs ,String[]Places, String[]Adjectives, String[]People, String[]Times,String[]Things){
+        System.out.println("I was " +randomWord(verbs)+ " down the "+randomWord(Places)+ " around "+randomWord(Times)+ " with my best friend " +randomWord(People)+ " and we "+randomWord(verbs)+ " a "+randomWord(Adjectives )+ " "+randomWord(Things ));
+        System.out.print(" that was " +randomWord(verbs )+" " +randomWord( Things) +(". "));
     }
     public static String randomWord(String[] array){
         Random random = new Random();
         return array[random.nextInt(array.length)];
+    }
+    public static void  print80sRapperName(String[] firstName,String[] middleName, String[]lastName){
+        System.out.println(randomWord(firstName) + randomWord(middleName) + randomWord(lastName));
     }
 }
